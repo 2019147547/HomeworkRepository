@@ -1,0 +1,62 @@
+.signup {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+.cancel {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+
+
+input {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid grey;
+}
+
+.tit {
+    font-size: 30px;
+    font-style: bold;
+}
+
+.con {
+    font-size: 20px;
+    font-style: bold;
+    width:100%
+}
+
+button {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    padding: 14px;
+    margin: 8px;
+    margin-left: 50px;
+    width: 12%;
+    height: 10%;
+    text-align: center;
+    font-family: Georgia, serif;
+  }
+  
+button:hover {
+    opacity: 0.8;
+}
+
+.divcon {
+    font-size: 15px;
+    font-style: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
