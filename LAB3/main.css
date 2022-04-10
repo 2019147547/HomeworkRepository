@@ -1,0 +1,129 @@
+.signup {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.cancel {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+
+
+input {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid grey;
+    text-align: center;
+}
+
+.con {
+    font-size: 20px;
+    font-style: bold;
+    width:100%;
+    text-align: center;
+}
+
+#list{
+    width: 1020px;
+    text-align: center;
+    margin: auto;
+}
+
+/*title animation*/
+.tit {
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+    position: relative;
+    animation-name: moves;
+    animation-duration: 2s;
+}
+
+@keyframes moves {
+    0% {left: 1000px;}
+    100% {left: 0px;}
+}
+
+
+
+/*Button*/
+button {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    padding: 14px;
+    width: 12%;
+    height: 10%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Georgia, serif;
+ }
+  
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.divcon {
+    font-size: 15px;
+    font-style: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Images*/
+
+.product {
+    width: 1020px;
+    display: flex;
+}
+
+.pianoDiv{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+    left: 28%;
+    position: absolute;
+}
+.guitarDiv{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+    right: 28%;
+    position: absolute;
+}
+
+img.piano:hover{
+    transition: transform 2s;
+    transform: rotate(360deg);
+}
+
+img.guitar{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}
+
+img.guitar:hover{
+    transition: transform 2s;
+    transform: scale(2);
+}
