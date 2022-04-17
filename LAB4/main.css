@@ -1,0 +1,209 @@
+.signup {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.cancel {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid grey;
+    text-align: center;
+}
+
+.con {
+    font-size: 20px;
+    font-style: bold;
+    width:100%;
+    text-align: center;
+}
+
+/*Button*/
+button {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    padding: 14px;
+    width: 12%;
+    height: 10%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Georgia, serif;
+ }
+  
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.divcon {
+    font-size: 15px;
+    font-style: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*title animation*/
+.tit {
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+    position: relative;
+    animation-name: moves;
+    animation-duration: 2s;
+}
+
+@keyframes moves {
+    0% {left: 1000px;}
+    100% {left: 0px;}
+}
+
+
+
+/*Column*/
+#navig {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.textDiv {
+    text-align: center;
+    background-color: aqua;
+    column-count: 2;
+}
+
+/*Images*/
+
+.product {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pianoDiv{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+}
+.guitarDiv{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.drumDiv{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.bassDiv{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+img.piano:hover{
+    transition: transform 2s;
+    transform: rotate(360deg);
+}
+
+img.guitar:hover{
+    transition: transform 2s;
+    transform: scale(2);
+    
+}
+
+img.guitar{
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+
+.guitarDiv img{
+    width: 50%;
+}
+
+.pianoDiv img{
+    width: 100%;
+}
+
+.bassDiv img{
+    width: 100%;
+}
+
+.drumDiv img{
+    width: 100%;
+}
+
+/*Media Querry*/
+@media (max-width: 800px) {
+    #navig {
+        flex-direction: column;
+    }
+    .textDiv{
+        column-count: 1;
+    }
+    .guitarDiv{
+        max-width: 40%;
+    }
+    .pianoDiv{
+        max-width: 40%;
+    }
+    .bassDiv{
+        max-width: 40%;
+    }
+    .drumDiv{
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    #navig {
+        flex-direction: column;
+    }
+    .textDiv{
+        column-count: 1;
+    }
+    .guitarDiv{
+        max-width: 100%;
+    }
+    .pianoDiv{
+        max-width: 100%;
+    }
+    .bassDiv{
+        max-width: 100%;
+    }
+    .drumDiv{
+        max-width: 100%;
+    }
+}
