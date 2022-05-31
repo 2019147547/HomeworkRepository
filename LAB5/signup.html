@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Signup</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <div id="list">
+            <nav>
+                <a href="index.html">Main Page</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+            </nav>
+        </div>
+        <p class="tit" >Welcome to Internet-Programming Shop!</p>
+        <div class="con">
+            <form method="post" action="signup.html">
+                <div class="divcon">
+                    <p>Username</p>
+                    <input type="text" name="name" autofocus required>
+                    <p>Email</p>
+                    <input type="email" name="email" placeholder="foo@yonsei.ac.kr" required>
+                    <p>Password</p>
+                    <input type="password" name="password" required>
+                    <p>Confirm Password</p>
+                    <input type="password" name="password" required>
+                    <p>Grade</p>
+                    <input type="number" name="grade" min="1" max="4" step="1" value="1">
+                    <p>Birthday</p>
+                    <input type="date" name="Birthday" min="1900-01-01" max="2022-04-04" value="2000-10-25" >
+                    <p>Phone Number</p>
+                    <input type="tel" name="tel" pattern="\d{11}" required>
+                </div>
+                <div class="divcon">
+                    <input class="signup" type="submit" value="Signup">
+                </div>
+                <div class="divcon">
+                    <input class="cancel" type="reset" value="Cancel"></button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
